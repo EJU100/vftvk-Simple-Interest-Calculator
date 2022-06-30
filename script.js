@@ -4,9 +4,8 @@ function compute()
     var principal = document.getElementById("principal").value;
     var rate = document.getElementById("rate").value;
     var years = document.getElementById("years").value;
-    var interest = principal * years * rate /100;
+    var interest = principal * years * rate / 100;
     var year = new Date().getFullYear()+parseInt(years);
-    p = document.getElementById("principal").value;
     //Interest Rate Text
     document.getElementById("result").innerHTML = "Interest : If you deposit <mark>" + principal + "</mark>,<br/>" +
         "at an interest rate of <mark>" + rate + "</mark>,<br/>" +
@@ -29,5 +28,4 @@ function validatePrincipal() {
         alert("Enter a positive number");
         document.getElementById("principal").focus();
     }
-
 }
